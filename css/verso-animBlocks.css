@@ -1,0 +1,217 @@
+.line1 {
+    background-image: url(../image/verso-images/line1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.line2 {
+    background-image: url(../image/verso-images/line2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 450px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.line3 {
+    background-image: url(../image/verso-images/line3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 950px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.line4 {
+    background-image: url(../image/verso-images/line4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 1050px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.box1 {
+    background-image: url(../image/verso-images/box1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    left: 90%;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: box1;
+    animation-direction: reverse;
+    width: 120px;
+    height: 120px;
+}
+
+.box2 {
+    background-image: url(../image/verso-images/box2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 280px;
+    left: 85%;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: box2;
+    width: 120px;
+    height: 120px;
+}
+
+.box3 {
+    background-image: url(../image/verso-images/box3.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 600px;
+    left: 15%;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: box3;
+    width: 120px;
+    height: 120px;
+}
+
+.box4 {
+    background-image: url(../image/verso-images/box4.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 700px;
+    left: 10%;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: box4;
+    animation-direction: reverse;
+    width: 120px;
+    height: 120px;
+}
+
+.box5 {
+    background-image: url(../image/verso-images/box5.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1200px;
+    left: 80%;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: box5;
+    width: 120px;
+    height: 120px;
+}
+
+.box6 {
+    background-image: url(../image/verso-images/box6.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1300px;
+    left: 85%;
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: box6;
+    width: 120px;
+    height: 120px;
+}
+
+.airflot {
+    background-image: url(../image/verso-images/airflot.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -6%;
+    top: 100px;
+    z-index: -1;
+    animation-duration: 6s;
+    animation-name: airflot;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes airflot {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+    50% {
+        margin-top: 5%;
+    }
+}
+
+@keyframes box1 {
+    from {
+        margin-top: 0%;
+        width: 300%;
+    }
+    to {
+        margin-top: -15%;
+        width: 100%;
+    }
+}
+
+@keyframes box2 {
+    from {
+        margin-top: 15%;
+        width: 300%;
+    }
+    to {
+        margin-top: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes box3 {
+    from {
+        margin-top: 15%;
+        width: 300%;
+    }
+    to {
+        margin-top: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes box4 {
+    from {
+        margin-left: 0%;
+        width: 300%;
+    }
+    to {
+        margin-left: -15%;
+        width: 100%;
+    }
+}
+
+@keyframes box5 {
+    from {
+        margin-top: 15%;
+        width: 300%;
+    }
+    to {
+        margin-top: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes box6 {
+    from {
+        margin-top: 10%;
+        width: 300%;
+    }
+    to {
+        margin-top: 0%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+.jost-reg{
+    font-family: 'Jost';
+    font-weight: 400;
+}
+
+.jost-med{
+    font-family: 'Jost';
+    font-weight: 500;
+}
+
+.jost-bol{
+    font-family: 'Jost';
+    font-weight: 700;
+}
+
+h3{
+    font-family: 'Jost';
+    font-weight: 500;
+}
+
+h4{
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 28px;   
+}

@@ -1,0 +1,494 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after *::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteiner {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+}
+
+body {
+    line-height: 28px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+.transitionRight {
+    transform: translateX(100%);
+}
+
+.transitionLeft {
+    transform: translateX(-100%);
+}
+
+.header {
+    background-image: url(../image/verso-images/bgtop.png);
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header__logo-img {
+    width: 102px;
+    height: 29px;
+    margin-right: 4px;
+}
+
+.header__logo-img-box {
+    width: 24px;
+    height: 24px;
+}
+
+.header__menu-list {
+    display: flex;
+}
+
+.header__menu-item {
+    margin: 0 28.5px;
+}
+
+.header__menu-link {
+    font-size: 16px;
+}
+
+.header__buy-link {
+    padding: 5px 29px 5px 30px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    font-size: 16px;
+    transition: all .5s;
+}
+
+.header__buy-link:hover {
+    background: #fff;
+    color: blue;
+}
+
+.purchase {
+    text-align: center;
+}
+
+.purchase__title {
+    margin-top: 168px;
+    font-size: 51px;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    margin-bottom: 30px;
+}
+
+.purchase__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.purchase__top-text {
+    font-size: 21px;
+    margin-bottom: 42px;
+    width: 695px;
+    margin: 0 auto 42px auto;
+    opacity: 0;
+    transform: translateY(120%);
+    transition: all 1.4s ease 0s;
+}
+
+.purchase__top-text._active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1.4s ease 0s;
+}
+
+.purchase__top-link {
+    color: #1F3E4F;
+}
+
+.purchase__blocks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.purchase__block-one {
+    margin-right: 85px;
+}
+
+.purchase__block-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.purchase__block-text._active {
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.purchase__block-link {
+    width: 179px;
+    height: 71px;
+    margin-bottom: 15px;
+}
+
+.purchase__block-item {
+    margin-bottom: 20px;
+}
+
+.purchase__block-list li {
+    transform: translateY(100%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.purchase__block-list._active li:nth-child(1) {
+    transform: translateY(0);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+
+.purchase__block-list._active li:nth-child(2) {
+    transform: translateY(0);
+    transition: all 1.2s ease 0s;
+    opacity: 1;
+}
+
+.purchase__block-list._active li:nth-child(3) {
+    transform: translateY(0);
+    transition: all 1.6s ease 0s;
+    opacity: 1;
+}
+
+.purchase__bottom-text {
+    font-size: 18px;
+    margin-bottom: 0px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.purchase__bottom-text._active {
+    transition: all 2.8s ease 0s;
+    opacity: 1;
+}
+
+.purchase__bottom-link {
+    color: #1F3E4F;
+}
+
+.add {
+    background-image: url(../image/verso-images/bgbottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.add__title {
+    font-size: 44px;
+    line-height: 80px;
+    text-align: center;
+    padding-top: 78px;
+    margin-top: 0px;
+    transform: translateY(10%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.add__title._active {
+    transform: translateY(0%);
+    transition: all 1.8s ease 0s;
+    opacity: 1;
+}
+
+.add__block {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+    padding-bottom: 60px;
+}
+
+.add__block-img {
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.add__block-img._active {
+    transform: scale(1);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+
+.add__block-text {
+    font-size: 18px;
+    width: 293px;
+    height: 112px;
+    margin-top: 25px;
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.add__block-text._active {
+    transform: scale(1);
+    transition: all 1.8s ease 0s;
+    opacity: 1;
+}
+
+.add__block-link {
+    color: #1F3E4F;
+}
+
+.add__block-inner {
+    margin: 0 110px;
+}
+
+.numberOne::before {
+    content: '';
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    color: #1F3E4F;
+    text-align: center;
+    background-image: url(../image/verso-images/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-75px);
+}
+
+.numberTwo::before {
+    content: '';
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    color: #1F3E4F;
+    text-align: center;
+    background-image: url(../image/verso-images/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-75px);
+}
+
+.possibilities {
+    text-align: center;
+    color: #1F3E4F;
+    padding-bottom: 75px;
+    margin-top: 35px;
+    transform: translateY(20%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.possibilities._active {
+    transform: translateY(0%);
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+
+.possibilities__title {
+    font-size: 44px;
+    line-height: 80px;
+    color: #283049;
+}
+
+.possibilities__top-text {
+    font-size: 21px;
+    width: 689px;
+    margin: 0 auto 57px auto;
+}
+
+.possibilities a {
+    color: #187BF5;
+}
+
+table {
+    width: 899px;
+    padding-bottom: 0;
+    text-align: start;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+th {
+    width: 280px;
+    text-align: start;
+    font-size: 18px;
+    padding: 10px 10px 10px 0;
+}
+
+tbody {
+    border-top: 1px solid #187BF566;
+    border-bottom: 1px solid #187BF566;
+}
+
+.colorRed {
+    color: #FF655F;
+}
+
+.possibilities__bottom-item {
+    width: 320px;
+    font-size: 18px;
+    margin-left: 190px;
+    margin-top: 30px;
+}
+
+.possibilities__bottom-item::before {
+    content: '';
+    background-image: url(../image/verso-images/star.png);
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    transform: translate(-32px, 3px);
+}
+
+.footer {
+    background: #0060E0;
+    padding-bottom: 109px;
+}
+
+.footer .conteiner .header__logo {
+    padding-top: 30px;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.footer__block-subscribe {
+    font-size: 22px;
+    width: 197px;
+}
+
+.footer__block-form {
+    position: relative;
+}
+
+.footer__block-input {
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 0.5;
+    background: #0060E0;
+    width: 345px;
+    height: 50px;
+    padding-right: 80px;
+}
+
+hr {
+    border: 1px solid #fff;
+    opacity: 0.1;
+}
+
+.footer__block-btn {
+    width: 60px;
+    height: 50px;
+    border-radius: 8px 8px 0px 0px;
+    background: #0D6BD8;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.footer__block-btn::before {
+    content: '>';
+    color: #fff;
+    font-size: 23px;
+}
+
+.footer__block-input:focus-visible {
+    outline: none;
+}
+
+.footer__block-two {
+    margin: 0 140px;
+}
+
+.footer__block-services {
+    color: #0D6BD8;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+.footer__social-link {
+    margin-left: 50px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .conteiner .logo {
+    padding-top: 50px;
+}
+
+.footer__block-item {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer__block-services {
+    margin-bottom: 16px;
+}
+
+.footer__copyright {
+    opacity: 0.5;
+}

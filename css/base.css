@@ -1,0 +1,136 @@
+body {
+    background: linear-gradient(to left,blue, purple);
+}
+
+.conteiner {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(to left,blue, purple);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back {
+    font-size: 60px;
+    color: green;
+    text-transform: uppercase;
+    text-shadow: 1px 1px white;
+}
+
+.lines {
+    display: flex;
+}
+
+.line {
+    opacity: 0.5;
+    background: black;
+    width: 50px;
+    height: 100px;
+}
+
+.line:nth-child(1)._active {
+    opacity: 1;
+    background: green;
+    transition: all 3s;
+}
+
+.line:nth-child(2)._active {
+    opacity: 1;
+    background: green;
+    transition: all 2.5s;
+}
+
+.line:nth-child(3)._active {
+    opacity: 1;
+    background: green;
+    transition: all 2s;
+}
+
+.line:nth-child(4)._active {
+    opacity: 1;
+    background: green;
+    transition: all 1.5s;
+}
+
+.line:nth-child(5)._active {
+    opacity: 1;
+    background: green;
+    transition: all 1s;
+}
+
+.line:nth-child(6)._active {
+    opacity: 1;
+    background: green;
+    transition: all 0.5s;
+}
+
+.loading {
+    opacity: 0;
+    width: 1%;
+    height: 100px;
+    background: linear-gradient(to left, blue,purple, orange, yellow, red);
+}
+
+.loading._active {
+    opacity: 1;
+    width: 50%;
+    transition:  width 5s, height 5s;
+}
+
+.video {
+    position: relative;
+}
+
+.video-bg{
+    position: relative;
+}
+
+.myVideo {
+    position: absolute;
+    width: -webkit-fill-available;
+    z-index: -1;
+}
+
+.text {
+    position: relative;
+    z-index: 1;
+    font-size: 60px;
+    color: white;
+}
+
+.item-map {
+    min-width: 300px;
+    width: 100%;
+    height: 600px;
+}
+
+.iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.iframeVideoY{
+    width: 1200px;
+    height: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
